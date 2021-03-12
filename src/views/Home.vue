@@ -1,7 +1,7 @@
 <template>
   <div>
     <span>用户名：{{ username }}</span>
-    <board :x-num="20" :y-num="15" :bombs="30" />
+    <board :x-num="10" :y-num="10" :bombs="10" />
     <div class="board" v-if="game">
       <div class="line" v-for="(itemLine, i) in boardArr" :key="i">
         <cube
